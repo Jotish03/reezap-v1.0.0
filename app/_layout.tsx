@@ -1,3 +1,4 @@
+import "react-native-gesture-handler";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
 import { useFonts } from "expo-font";
@@ -6,7 +7,9 @@ import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from "react-redux";
 import { store } from "@/store/store";
+import { createStackNavigator } from "@react-navigation/stack";
 
+const StackAn = createStackNavigator();
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {

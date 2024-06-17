@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Origin } from "@/types/location-types";
+import { Destination, Origin } from "@/types/location-types";
 interface NavState {
   origin: Origin | null;
-  destination: null;
+  destination: Destination | null;
   travelTimeInformation: null;
 }
 

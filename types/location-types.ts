@@ -8,3 +8,8 @@ export interface Origin {
   location: Location;
   description?: string; // Add a description property
 }
+
+export interface Destination {
+  location: Location;
+  description?: string; // Add a description property
+}

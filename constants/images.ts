@@ -8,5 +8,18 @@ import wavytwo from "../assets/images/Wavy2.png";
 import wavythree from "../assets/images/Wavy3.png";
 // @ts-ignore
 import wavyfour from "../assets/images/Wavy4.png";
+// @ts-ignore
+import placeholder from "../assets/images/placeholder.png";
 
-export default { reezaplogo, wavyone, wavyfour, wavythree, wavytwo };
+// @ts-ignore
+import ride from "../assets/images/ride.png";
+
+export default {
+  reezaplogo,
+  wavyone,
+  wavyfour,
+  wavythree,
+  wavytwo,
+  placeholder,
+  ride,
+};
