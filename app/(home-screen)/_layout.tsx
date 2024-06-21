@@ -5,6 +5,8 @@ import HomeScreen from "./home-screen";
 import MapScreen from "./map-screen";
 import DestinationCard from "./destination-card";
 import RideCard from "./ride-card";
+import BottomNavTab from "../../components/(tabs)/nav-tab";
+import MainScreen from "./main-screen";
 
 const HomeLayout = () => {
   const Stack = createStackNavigator();
@@ -29,6 +31,11 @@ const HomeLayout = () => {
         <Stack.Screen
           name="ride-card"
           component={RideCard}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="main-screen"
+          component={MainScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

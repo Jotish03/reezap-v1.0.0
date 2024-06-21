@@ -30,7 +30,7 @@ const OTPInput: React.FC<OTPInputProps> = ({ onCodeFilled }) => {
       </View>
       <TouchableOpacity
         className="bg-primary py-3 px-6 rounded-lg mt-1"
-        onPress={() => router.push("home-screen")}
+        onPress={() => router.push("main-screen")}
       >
         <View className="flex flex-row items-center justify-center gap-2">
           <Text className="text-white text-center font-intersemibold">

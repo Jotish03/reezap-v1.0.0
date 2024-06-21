@@ -24,7 +24,7 @@ const MapScreen = () => {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
       <TouchableOpacity
-        onPress={() => router.navigate("home-screen")}
+        onPress={() => router.navigate("main-screen")}
         className="bg-primary absolute top-16 left-4 z-50 p-3 rounded-full shadow-lg"
       >
         <Icon name="menu" />
