@@ -37,7 +37,7 @@ const MapViewGoogle = () => {
     if (!origin || !destination) return;
     const getTravelTime = async () => {
       fetch(
-        `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${origin.description}&destinations=${destination.description}&key=${process.env.GOOGLE_MAPS_API}`
+        `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${origin.description}&destinations=${destination.description}&key=${process.env.EXPO_PUBLIC_API_KEY}`
       )
         .then((res) => res.json())
         .then((data) => {
@@ -45,7 +45,7 @@ const MapViewGoogle = () => {
         });
     };
     getTravelTime();
-  }, [origin, destination, process.env.GOOGLE_MAPS_API]);
+  }, [origin, destination, process.env.EXPO_PUBLIC_API_KEY]);
 
   const darkGrayscaleMapStyle = [
     {
@@ -250,7 +250,7 @@ const MapViewGoogle = () => {
         <MapViewDirections
           origin={origin.description}
           destination={destination.description}
-          apikey="AIzaSyBp-4UVVsAE3hQ0Oy-E2sgmSXBqUdLN0ts"
+          apikey={`${process.env.EXPO_PUBLIC_API_KEY}`}
           strokeWidth={3} // Increase the stroke width
           strokeColor="#4de59c" // Set the stroke color with transparency
           optimizeWaypoints={true}

@@ -125,7 +125,7 @@ const HomeScreen = () => {
                   fetchDetails={true}
                   enablePoweredByContainer={false}
                   query={{
-                    key: process.env.GOOGLE_MAPS_API,
+                    key: process.env.EXPO_PUBLIC_API_KEY,
                     language: "en",
                   }}
                   nearbyPlacesAPI="GooglePlacesSearch"

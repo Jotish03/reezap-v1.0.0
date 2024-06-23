@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import BottomNav from "../../components/(tabs)/nav-tab";
+import BottomNav from "@/components/(tabs)/nav-tab";
 
 const MainScreen = () => {
   return (
